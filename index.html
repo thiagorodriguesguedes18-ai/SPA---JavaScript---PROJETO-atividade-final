@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini SPA Acessível - Thiago Rodrigues Guedes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header role="banner">
+    <div class="container header-inner">
+      <h1>Mini SPA com JavaScript</h1>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#home" class="link" data-route="home">Home</a></li>
+          <li><a href="#sobre" class="link" data-route="sobre">Sobre</a></li>
+          <li><a href="#contato" class="link" data-route="contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="contrastToggle" aria-pressed="false" aria-label="Ativar modo alto contraste">Alto Contraste</button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" role="main">
+    <div id="conteudo" class="container" aria-live="polite"></div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Desenvolvido por Thiago Rodrigues Guedes — <a href="https://github.com/thiagorodriguesguedes18-ai" target="_blank" rel="noopener">Perfil GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/spa.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
